@@ -1,6 +1,7 @@
 import { AfterViewInit, Component,HostListener,OnInit } from '@angular/core';
 import * as L from 'leaflet';
 
+//Decoracion de iconos de leaflet con imagenes locales
 const iconDefault = L.icon({
   iconUrl: 'assets/leaflet/marker-icon.png',
   iconRetinaUrl: 'assets/leaflet/marker-icon-2x.png',
@@ -21,7 +22,6 @@ L.Marker.prototype.options.icon = iconDefault;
 })
 export class ExplorarComponent implements OnInit,AfterViewInit{
 
-  
   // Mapa
   private map: L.Map | undefined;
 
@@ -44,7 +44,6 @@ export class ExplorarComponent implements OnInit,AfterViewInit{
     this.initMap();
   }
 
-  // Mapa
   private initMap(): void {
       // Inicializa el mapa
     this.map = L.map('mapa', {
