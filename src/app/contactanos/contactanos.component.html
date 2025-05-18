@@ -1,0 +1,47 @@
+<form [formGroup]="contactForm" (ngSubmit)="enviarFormulario()" class="contact-form">
+  <div>
+    <label> </label>
+  </div>
+  
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input id="nombre" formControlName="nombre" type="text" required />
+  </div>
+
+  <div>
+    <label for="email">Correo Electrónico:</label>
+    <input id="email" formControlName="email" type="email" required />
+  </div>
+
+  <div>
+    <label for="telefono">Teléfono:</label>
+    <input id="telefono" formControlName="telefono" type="text" />
+  </div>
+
+  <div>
+    <label for="destino">Destino deseado:</label>
+    <select id="destino" formControlName="destino" required>
+      <option value="">Seleccione un destino</option>
+      <option value="playa">Playa</option>
+      <option value="montana">Montaña</option>
+      <option value="ciudad">Ciudad</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="tipoViaje">Tipo de viaje:</label>
+    <select id="tipoViaje" formControlName="tipoViaje" required>
+      <option value="">Seleccione el tipo de viaje</option>
+      <option value="familiar">Familiar</option>
+      <option value="aventura">Aventura</option>
+      <option value="romantico">Romántico</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" formControlName="mensaje" rows="4" required></textarea>
+  </div>
+
+  <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+</form>

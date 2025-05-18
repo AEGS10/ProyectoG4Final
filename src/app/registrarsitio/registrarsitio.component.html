@@ -1,0 +1,14 @@
+
+<div class="dialog-overlay">
+    <div class="dialog-box">
+      <h3>Editar Producto</h3>
+      <label>Nombre: <input [(ngModel)]="dato.nombre"></label>
+      <label>Categoría: <input [(ngModel)]="dato.categoria"></label>
+      <label>Precio: <input type="number" [(ngModel)]="dato.precio"></label>
+      <label>Stock: <input type="number" [(ngModel)]="dato.stock"></label>
+  
+      <button (click)="enviar()">Guardar</button>
+      <button (click)="cerrarDialogo()">Cancelar</button>
+    </div>
+</div>
+  

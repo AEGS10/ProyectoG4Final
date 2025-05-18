@@ -1,0 +1,15 @@
+
+html, body{
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+.pagina-fondo-inicial {
+    height: 100vh;
+    width: 100%;
+    background-image: url('/assets/imagenes/PaginaInicial.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

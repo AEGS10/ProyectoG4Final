@@ -1,0 +1,29 @@
+<mat-toolbar class= "header">
+  <span class="titulo">Destino Ideal EC</span>
+  <div class="module">
+        <a  href="#" *ngIf="!logeadoCabecera">Sobre Nosotros</a>
+      </div>
+  <nav class="nav">
+    <div>
+      <button class ="nav-item"*ngIf="!logeadoCabecera" (click)="openDialogLogin()">Iniciar Sesión</button>
+    </div>
+    
+    
+  </nav>
+  
+    <div class="module">
+      <a routerLink="/explorar" *ngIf="logeadoCabecera">Explorar</a>
+      <a routerLink="/reservas" *ngIf="logeadoCabecera">Reservas</a>
+      <a routerLink="/recomendaciones"*ngIf="logeadoCabecera">Recomendaciones</a>
+      <a routerLink="/experiencias" *ngIf="logeadoCabecera">Experiencias</a>
+      <a routerLink="/contactanos" *ngIf="logeadoCabecera">Contáctanos</a>
+    </div> 
+    <p class = "bienvenido" *ngIf="logeadoCabecera">Bienvenido, Grupo 4</p> 
+    <div>
+      
+    
+      <button class="cerrar" *ngIf="logeadoCabecera" (click)="cerrarsesion()">Cerrar Sesión</button>
+      
+    </div>
+    
+</mat-toolbar>

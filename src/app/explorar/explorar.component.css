@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Signika:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background: #1D212B;
+    margin: 0;
+    padding: 0;
+}
+
+/*Scroll primera parte el titulo ocupa toda la pantalla*/
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(1){
+    color: #fff;
+    font-weight: bolder;
+}
+section:nth-child(2){
+    color: #1D212B;
+    background: #fff;
+    font-weight: bolder;
+}
+section:nth-child(3){
+    color: #fff;
+    font-weight: bolder;
+}
+section:nth-child(4){
+    color: #1D212B;
+    background: #fff;
+    font-weight: bolder;
+}
+section:nth-child(5){
+    color: #fff;
+    font-weight: bolder;
+}
+
+section .container{
+    margin: 100px;
+}
+
+section h1{
+    font-size: 60px;
+}
+section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section .cards{
+    display: flex;
+}
+section .cards .text-card{
+    background: #2696E9;
+    margin: 20px;
+    padding: 20px;
+}
+section .cards .text-card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+    section h1{
+        font-size: 40px;
+    }
+    section .cards{
+        flex-direction: column;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition:  all 2s ease;
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Imagenes */
+
+img{
+    width: 100%;
+}
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+.column img{
+    margin-top: 5px;
+}
+.SectionGallery{
+    background-color: white;
+}
+.Tgallery{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    justify-content: center;
+}
+@media (max-width: 800px){
+    .column{
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+    }
+}
+
+/* Estilos para el mapa*/
+#mapa{
+  border-radius: 20px;
+  align-items: center;
+  margin: 20px auto;
+  border: 3px solid #2696E9;
+  padding: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  z-index: 1;
+}
