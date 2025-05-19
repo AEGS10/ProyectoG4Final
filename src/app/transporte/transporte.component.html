@@ -1,0 +1,11 @@
+<h2>Opciones de Transporte</h2>
+<div class="item-grid">
+  <div class="item-card" *ngFor="let transporte of transportes">
+    <img [src]="transporte.imagenUrl" alt="{{ transporte.tipo }}">
+    <h3>{{ transporte.tipo }}</h3>
+    <p>{{ transporte.descripcion }}</p>
+    <p>Precio: ${{ transporte.precio }}</p>
+    <p>{{transporte.destino}}</p>
+    <button (click)="reservarTransporte(transporte)">Reservar Transporte</button>
+  </div>
+</div>

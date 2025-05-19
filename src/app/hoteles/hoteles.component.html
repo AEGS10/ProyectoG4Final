@@ -1,0 +1,10 @@
+<h2>Hoteles Disponibles</h2>
+<div class="item-grid">
+  <div class="item-card" *ngFor="let hotel of hoteles">
+    <img [src]="hotel.imagenUrl" alt="{{ hotel.nombre }}">
+    <h3>{{ hotel.nombre }}</h3>
+    <p>{{ hotel.descripcion }}</p>
+    <p>Precio: ${{ hotel.precio }}</p>
+    <button (click)="reservarHotel(hotel)">Reservar Hotel</button>
+  </div>
+</div>

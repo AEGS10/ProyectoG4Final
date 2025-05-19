@@ -1,0 +1,10 @@
+<h2>Tours y Excursiones</h2>
+<div class="item-grid">
+  <div class="item-card" *ngFor="let tour of tours">
+    <img [src]="tour.imagenUrl" alt="{{ tour.nombre }}">
+    <h3>{{ tour.nombre }}</h3>
+    <p>{{ tour.descripcion }}</p>
+    <p>Precio: ${{ tour.precio }}</p>
+    <button (click)="reservarTour(tour)">Reservar Tour</button>
+  </div>
+</div>
