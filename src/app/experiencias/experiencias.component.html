@@ -1,15 +1,43 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="formulario">
+  
+    <form (ngSubmit)="enviarFormulario()">
 
-<p>experiencias works!</p>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Usuario</mat-label>
+      <input matInput [(ngModel)]="nuevaExperiencia.username" name="username" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Lugar visitado</mat-label>
+      <input matInput [(ngModel)]="nuevaExperiencia.location" name="location" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Calificación</mat-label>
+      <mat-select [(ngModel)]="nuevaExperiencia.rating" name="rating" required>
+
+        <mat-option *ngFor="let r of [1,2,3,4,5]" [value]="r">{{ r }} ⭐</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Comentario</mat-label>
+      <textarea matInput rows="4" [(ngModel)]="nuevaExperiencia.comment" name="comment" required></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Enviar experiencia</button>
+  </form>
+</div>
+
+<div class="comentarios" *ngIf="experiencias.length > 0">
+  <h2>Experiencias compartidas</h2>
+
+  
+  <mat-card *ngFor="let exp of experiencias" class="comentario">
+    <mat-card-title>{{ exp.username }} — {{ obtenerEstrellas(exp.rating) }}</mat-card-title>
+    <mat-card-subtitle>{{ exp.location }}</mat-card-subtitle>
+    <mat-card-content>
+      <p>{{ exp.comment }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
