@@ -1,0 +1,37 @@
+
+<div class="busqueda-filtros">
+  <input type="text" placeholder="Buscar..." [(ngModel)]="busquedaTexto" name="busqueda" />
+  <button (click)="buscar()">Buscar</button>
+
+  <select [(ngModel)]="filtroPrecio" name="precio">
+    <option value="">Precio</option>
+    <option value="bajo">Menor a $10</option>
+    <option value="medio">Entre $10 y $50</option>
+    <option value="alto">Mayor a $50</option>
+  </select>
+
+  <select [(ngModel)]="filtroRegion" name="region">
+    <option value="">Región</option>
+    <option value="Costa">Costa</option>
+    <option value="Sierra">Sierra</option>
+    <option value="Amazonía">Amazonía</option>
+    <option value="Galápagos">Galápagos</option>
+  </select>
+
+  <select [(ngModel)]="filtroCategoria" name="categoria">
+    <option value="">Categoría</option>
+    <option value="deportes_extremos">Deportes Extremos</option>
+    <option value="ciclismo_recorrido">Ciclismo y Recorrido</option>
+    <option value="acuatica">Acuática</option>
+    <option value="gastronomica">Gastronómica</option>
+  </select>
+</div>
+
+<!-- Resultados -->
+<div *ngFor="let actividad of resultados" class="resultado">
+  <h4>{{ actividad.nombre }}</h4>
+  <p>Región: {{ actividad.region }}</p>
+  <p>Categoría: {{ actividad.categoria }}</p>
+  <p>Precio: ${{ actividad.precio }}</p>
+</div>
+

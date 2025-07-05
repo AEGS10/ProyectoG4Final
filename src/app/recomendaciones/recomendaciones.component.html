@@ -1,50 +1,990 @@
+<br>
+<br>
+<div class="contenedorbusqueda">
+  <form class="form-busqueda">
+    <input type="text" placeholder="¿Qué estás buscando?...">
+    <button type="submit">
+      <img src="assets/RecomendacionesFiguras/Search.svg" alt="Buscar">
+    </button>
+  </form>
+</div>
+
+
+<h1>Actividades Populares</h1>
+
+<h2>Deportes Extremos</h2>
+
+<div class="seccion">
+
+    <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Canopy.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Sierra, Baños De Agua Santa</h3>
+    </div>
+    
+    <h4>Canopy</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$10</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Experimenta la emoción de deslizarte a gran velocidad entre cables instalados en la copa de los árboles, disfrutando de vistas panorámicas espectaculares. Ideal para quienes buscan adrenalina y conexión con la naturaleza. Precio aproximado: $10 por persona, puede variar según la ubicación y duración.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Parapente.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Costa, Crucita</h3>
+    </div>
+    
+    <h4>Parapente</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$40</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Vive la increíble sensación de volar y contemplar paisajes únicos mientras planeas suavemente con un instructor experimentado que te guía en todo momento. Requiere condiciones climáticas adecuadas para un vuelo seguro y placentero. Precio aproximado: $40, según duración y lugar.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Puenting.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Sierra, Baños De Agua Santa</h3>
+    </div>
+    
+    <h4>Puenting</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$25</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Siente la descarga de adrenalina al lanzarte desde un puente sujetado por una cuerda elástica resistente, en una experiencia extrema y segura supervisada por expertos. Es una actividad emocionante para quienes buscan retos intensos. Precio aproximado: $25, según altura y sitio.
+
+')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Escalada.png" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Sierra, Baños De Agua Santa</h3>
+    </div>
+    
+    <h4>Escalada</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$20</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Pon a prueba tu fuerza, resistencia y destreza ascendiendo paredes naturales o muros artificiales con equipo especializado y guías certificados. Es ideal para amantes de la aventura al aire libre. Precio aproximado: $20, según modalidad y duración.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Canyoning.png" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Sierra, Baños De Agua Santa</h3>
+    </div>
+    
+    <h4>Canyoning</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$20</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Desciende cañones haciendo rápel, saltos y atravesando cascadas en un recorrido acuático lleno de aventura y adrenalina. Recomendado para quienes aman los retos en la naturaleza. Precio aproximado: $20 , varía según el cañón y duración.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Rafting.png" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Sierra, Baños De Agua Santa</h3>
+    </div>
+    
+    <h4>Rafting</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$30</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Navega en equipo por rápidos de ríos emocionantes, combinando diversión y trabajo en equipo en paisajes naturales impresionantes. Ideal para principiantes y expertos. Precio aproximado: $30, según nivel de dificultad y extensión.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Ciclismo y recorrido</h2>
+
+<div class="seccion">
+
+    <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/CiclismoDeMontaña.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Sierra,Quilotoa </h3>
+    </div>
+    
+    <h4>Ciclismo De Montaña</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$25</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Recorre senderos agrestes, bosques y montañas en bicicletas diseñadas para terreno difícil, disfrutando de ejercicio y contacto con la naturaleza. Precio aproximado: $25 por alquiler y guía, sujeto a variaciones.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Motos4x4.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Costa, Montañita</h3>
+    </div>
+    
+    <h4>Motos 4x4</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$20</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Explora caminos remotos y terrenos difíciles conduciendo vehículos todo terreno, viviendo una aventura para descubrir paisajes inaccesibles y sensaciones únicas. Precio aproximado: $20 por hora, varía según lugar.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Caminata.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Sierra, El Cajas</h3>
+    </div>
+    
+    <h4>Caminatas</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$10</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Realiza recorridos a pie por senderos naturales, parques y reservas, ideal para quienes disfrutan del contacto directo con la naturaleza y la tranquilidad. Precio aproximado: $10, según ruta y guía.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h2>Acuática</h2>
+
+<div class="seccion">
+
+    <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Kayak.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Amazonia, Tena</h3>
+    </div>
+    
+    <h4>Kayak</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$20</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Navega ríos, lagos o la costa en kayaks, una forma activa y cercana de explorar el agua y sus paisajes. Perfecto para todos los niveles. Precio aproximado: $20 por alquiler y guía.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Surf.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Costa, Montañita</h3>
+    </div>
+    
+    <h4>Surf</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$15</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Aprende o practica el surf en playas con olas ideales, disfrutando del mar y la emoción de deslizarte sobre ellas. Precio aproximado: $15 por clase o alquiler de tabla.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Buceo.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Galápagos, Puerto Ayora</h3>
+    </div>
+    
+    <h4>Buceo</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$100</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Sumérgete para explorar el mundo submarino lleno de vida marina y paisajes de arrecifes, una experiencia inolvidable que requiere certificación y equipo especializado. Precio aproximado: $100 por inmersión.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Snorkel.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Galápagos, San Cristobal</h3>
+    </div>
+    
+    <h4>Snorkel</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$25</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Nada en la superficie con máscara y tubo para observar arrecifes y peces tropicales, una actividad accesible para todos y muy visual. Precio aproximado: $25 por alquiler de equipo y tour.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/PaseoEnYate.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Costa, Isla De La Plata</h3>
+    </div>
+    
+    <h4>Paseo En Yate</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$300</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Disfruta de una navegación relajante en un yate privado o compartido, contemplando paisajes marinos y disfrutando de comodidad y exclusividad. Precio aproximado: $100 - $300 por persona, según paquete.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/PescaDeportiva.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Costa, Salinas</h3>
+    </div>
+    
+    <h4>Pesca Deportiva</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$60</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Practica la pesca recreativa en alta mar o ríos, con equipo especializado y guías expertos, buscando capturar especies deportivas y disfrutar la experiencia. Precio aproximado: $60 por jornada.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Gastronómica</h2>
+
+<div class="seccion">
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Encebollado.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Costa, Guayaquil</h3>
+    </div>
+    
+    <h4>Encebollado</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$4</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Deliciosa sopa tradicional a base de pescado, yuca y cebolla encurtida, ideal para desayunar o almorzar con un toque cítrico. Su sabor reconfortante lo convierte en uno de los platos más populares del país. Precio aproximado: $4 por porción, dependiendo del lugar y acompañamientos.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Bolon.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Costa, Portoviejo</h3>
+    </div>
+    
+    <h4>Bolón De Verde</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$2.50</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Preparado con plátano verde machacado y relleno de queso o chicharrón, este plato se sirve principalmente en el desayuno. Es energético, sabroso y muy representativo de la cocina costeña. Precio aproximado: $2.50 por unidad, dependiendo del relleno y la preparación local.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/EncocadoPescado.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Costa, Esmeraldas</h3>
+    </div>
+    
+    <h4>Encocado De Pescado</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$6</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Plato típico de la costa que combina pescado fresco cocido en una cremosa y aromática salsa de coco, acompañado de arroz y ensalada. Su sabor es suave pero intenso. Precio aproximado: $6, según el tipo de pescado y acompañamientos.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Hornado.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Sierra, Latacunga</h3>
+    </div>
+    
+    <h4>Hornado</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$5</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Cerdo horneado lentamente con especias tradicionales, servido con mote, llapingachos y ensalada. Plato emblemático de la Sierra ecuatoriana que destaca por su sabor profundo y textura crujiente. Precio aproximado: $5 por porción, según el lugar y acompañamientos.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/LocroDePapa.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Sierra, Quito</h3>
+    </div>
+    
+    <h4>Locro De Papa</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$3</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Sopa espesa y cremosa hecha con papas, queso y aguacate. Muy nutritiva y perfecta para días fríos. Se sirve con ají o tostado como acompañante. Precio aproximado: $3 por plato, dependiendo de la región y si se incluyen guarniciones.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/CuyAsado.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Sierra, Loja</h3>
+    </div>
+    
+    <h4>Cuy Asado</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$10</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Conejillo de Indias cocinado al horno con aliños tradicionales. Es un platillo ancestral y especial de la Sierra ecuatoriana. Su preparación y presentación lo hacen único. Precio aproximado: $10 por unidad, dependiendo del tamaño y la zona.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/MaitoDePescado.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Amazonía, Tena</h3>
+    </div>
+    
+    <h4>Maito De Pescado</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$6</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Preparado en la Amazonía, consiste en pescado envuelto en hojas de bijao y cocido al vapor con hierbas locales. Conserva todo su sabor natural. Precio aproximado: $6 por plato, dependiendo del tipo de pescado y acompañamientos.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Chontacuro.png" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Amazonía, Puyo</h3>
+    </div>
+    
+    <h4>Chontacuro</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$6</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Gusano amazónico asado en brasas, muy nutritivo y consumido por las comunidades indígenas. Tiene sabor ahumado y textura crujiente por fuera. Ideal para paladares aventureros. Precio aproximado: $6 por unidad, dependiendo del sitio.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/Ayampaco.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Amazonía, Macas</h3>
+    </div>
+    
+    <h4>Ayampaco</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$5</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Delicia amazónica elaborada con pescado, hierbas aromáticas y vegetales, todo cocido dentro de hojas de bijao. Se acompaña de yuca o plátano. Precio aproximado: $5 por porción, dependiendo del pescado y acompañamientos.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/CevicheDeCanchalagua.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Galápagos, Puerto Ayora</h3>
+    </div>
+    
+    <h4>Ceviche De Canchalagua</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$7</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Variante del ceviche tradicional preparado con mariscos frescos y la fruta tropical canchalagua, que aporta un sabor ácido y refrescante. Precio aproximado: $7 por plato, dependiendo del lugar y los ingredientes utilizados.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/ArrozMarinero.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Galápagos, Puerto Baquerizo Moreno</h3>
+    </div>
+    
+    <h4>Arroz Marinero</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$6</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Plato típico de la costa ecuatoriana preparado con arroz, mariscos frescos, especias y vegetales. Es abundante, sabroso y muy valorado. Precio aproximado: $6 por porción, dependiendo del número de mariscos incluidos.
+
+')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_cuadro">
+
+    <div class="contenedor_imagen">
+      <img src="assets/ImagenesRecomendaciones/LangostaGalapagueña.jpg" class="imagenes">
+    </div>
+
+    <div class="Ubicacion">
+      <img src="assets/RecomendacionesFiguras/Location.svg" class="location">
+      <h3>Galápagos, Isabela</h3>
+    </div>
+    
+    <h4>Langosta Galapagueña</h4>
+    
+      <div class="Estrellas">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+        <img src="assets/RecomendacionesFiguras/Star.svg" class="star">
+      </div>
+      
+    <div class="contenedor_precio">
+      <h5 class="dinero">$12</h5><h6 class="aprox">/aprox</h6>
+      <h5 class="vermas" (click)="mostrarInfo('Langosta fresca cocinada al estilo típico de las islas Galápagos. De sabor intenso y textura tierna, es un plato exclusivo para los amantes del marisco. Precio aproximado: $12 por plato, según presentación y acompañamientos.')">Ver más <img src="assets/RecomendacionesFiguras/Angleright.svg" class="angle"> </h5>
+    </div>
+
+    <div class="modal_fondo" *ngIf="mostrarCuadro" (click)="cerrarInfo()">
+      <div class="cuadro_Info" (click)="$event.stopPropagation()">
+      
+        <p>{{contenidoModal}}</p>
+        <button (click)="cerrarInfo()" class="cerrar">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <br>
 <br>
 <br>
 <br>
-<h2>PRODUCTOS TURISTICOS DEL ECUADOR</h2>
-
-<br>
-<input type="text" [(ngModel)]="filtro" placeholder="Buscar por nombre...">
-<button class = "agg"(click)="insert()">+ Nuevo</button>
-
-<table>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Nombre</th>
-      <th>Categoría</th>
-      <th>Precio</th>
-      <th>Stock</th>
-      <th>Acciones</th>
-    </tr>
-  </thead>
-  <tbody>
-    @for (item of datosFiltrados; track item.id) {
-      <tr>
-        <td>{{ item.id }}</td>
-        <td>{{ item.nombre }}</td>
-        <td>{{ item.categoria }}</td>
-        <td>{{ item.precio }}</td>
-        <td>{{ item.stock }}</td>
-        <td>
-          <button (click)="modificar(item)">Modificar</button>
-          <button (click)="eliminar(item.id)">Eliminar</button>
-        </td>
-      </tr>
-    }
-  </tbody>
-</table>
-
-@if (mostrarDialogo) {
-  <app-registrarsitio
-    [dato]="datoEditando"
-    (guardar)="actualizarDatos($event)"
-    (cerrar)="cerrarDialogo()"
-  ></app-registrarsitio>
-}
-<br>
-
-
  

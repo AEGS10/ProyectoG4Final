@@ -4,76 +4,242 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins",sans-serif;
+    font-family: "Libertinus Math", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
-body{
-    background: #1D212B;
-    margin: 0;
-    padding: 0;
+.seccion{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  gap: 10px;
 }
-/*Tabla*/
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-  font-family: 'Poppins', sans-serif;
-  background-color: black;
-  color: white;
-}
-
-th, td {
-  padding: 10px;
-  text-align: left;
-  border: 1px solid #ddd;
+h1{
   text-align: center;
+  padding-top: 5%;
 }
 
-th {
-  background-color: #55839b;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+h2{
+  margin-left: 10%;
+  padding-bottom: 4px;
+  padding-top: 30px;
+}
+h3{
+  font-size: 15px;
 }
 
-input[type="text"] {
-  width: 100%;
-  max-width: 700px;
-  padding: 8px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-family: 'Poppins', sans-serif;
+.seccion_cuadro{
+  padding-left: 6%;
+  padding-top: 2%;
   
 }
 
-button {
-  margin: 0 5px;
-  padding: 6px 12px;
-  border: none;
-  background-color: #55839b;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+.contenedor_imagen{
+  width: 300px;           
+  height: 200px;          
+  overflow: hidden;
+  position: relative;
 }
 
-button:hover {
+.imagenes{
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+  display: block;
+}
+
+/*Titulo Canopy*/
+h4{
+  padding: 2px;
+  font-size: 25px;
+}
+.Ubicacion {
+  display: flex;
+  gap: 8px;
+  font-size: 10px;
+  padding: 6px;
+  
+}
+.location{
+  width: 10px;
+}
+
+.Estrellas{
+  width: 15px;
+  display: flex;
+  gap: 12px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-left: 5px;
+}
+
+/*Cuadro de precio*/
+.contenedor_precio{
+  background-color: rgb(218, 77, 17);
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.dinero {
+  font-size: 15px;
+  margin-left: 30px;
+}
+.aprox{
+  margin: 0 2px;
+  font-size: 10px;
+}
+
+
+
+.modal_fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.2); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; 
+  
+}
+
+.cuadro_Info {
+  padding: 20px;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  z-index: 1000;
+  background-color: #ed8787;
+  text-align:justify ;
+  font-size: 16px;
+  word-spacing: 0.1em;
+  
+}
+.cerrar{
+  display: block;       
+  margin: 0 auto;       
+  padding: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #f55239dd;
+  border: none;
+  color: white;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  
+}
+.cerrar:hover{
   background-color: white;
   color: black;
-  font-family: 'Poppins', sans-serif;
+}
+
+.vermas {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto; 
   
 }
-.agg:hover {
-  background-color: black;
-  color: white;
-  font-family: 'Poppins', sans-serif;
 
+.angle {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 2px;
 }
-h2 {
-  margin-top: 0;
-  color: black;
-  text-align: center;
-  font-size: 1.9em;
-  font-family: 'Poppins', sans-serif;
+
+.contenedorbusqueda{
+  padding-top: 12%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+form{
+  background-color: #d5d1d1;
+  width: 90%;
+  max-width: 600px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+  padding-right: 10px;
+}
+
+form input {
+  font-size: 18px;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+form search {
+  background-color: rgb(218, 77, 17);
+  border: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+search {
+  color: #fff;
+  font-size: 18px;
+  height: 4px;
+  width: 4px;
+}
+
+.contenedorbusqueda {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.form-busqueda {
+  display: flex;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+
+.form-busqueda input {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 30px;
+  width: 250px;
+}
+
+.form-busqueda button {
+  background-color: rgb(218, 77, 17);
+  border: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form-busqueda img {
+  width: 20px;
+  height: 20px;
 }
