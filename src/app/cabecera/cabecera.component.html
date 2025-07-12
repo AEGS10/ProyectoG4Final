@@ -1,7 +1,7 @@
 <mat-toolbar class= "header">
-  <span class="titulo">Destino Ideal EC</span>
+   <a routerLink="/paginainicial" class="titulo">Destino Ideal EC</a>
   <div class="module">
-        <a  href="#" *ngIf="!logeadoCabecera">Sobre Nosotros</a>
+        <a routerLink="/sobrenosotros" *ngIf="!logeadoCabecera">Sobre Nosotros</a>
       </div>
   <nav class="nav">
     <div>
@@ -18,12 +18,9 @@
       <a routerLink="/experiencias" *ngIf="logeadoCabecera">Experiencias</a>
       <a routerLink="/contactanos" *ngIf="logeadoCabecera">Contáctanos</a>
     </div> 
-    <p class = "bienvenido" *ngIf="logeadoCabecera">Bienvenido, Grupo 4</p> 
+    <p class = "bienvenido" *ngIf="logeadoCabecera">Bienvenido, {{ nombreUsuario }}</p> 
     <div>
-      
-    
       <button class="cerrar" *ngIf="logeadoCabecera" (click)="cerrarsesion()">Cerrar Sesión</button>
-      
     </div>
     
 </mat-toolbar>

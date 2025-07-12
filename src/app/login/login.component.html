@@ -23,7 +23,10 @@
         <label><input type="checkbox">Recuerdame</label>
         <a href="#">Olvidaste la contraseña?</a>
       </div>
-      <button type="submit" class="btn">Iniciar Sesión</button>
+
+      <p *ngIf="mensaje" class="mensaje">{{ mensaje }}</p>
+      
+      <button type="submit" class="btn" >Iniciar Sesión</button>
       <div class="register-link">
         <p>No eres miembro? <a href="#">Registrate ahora</a></p>
       </div>

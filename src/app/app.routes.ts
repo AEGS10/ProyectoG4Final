@@ -10,6 +10,8 @@ import { RecomendacionesComponent } from './recomendaciones/recomendaciones.comp
 import { HotelesComponent } from './hoteles/hoteles.component';
 import { TransporteComponent } from './transporte/transporte.component';
 import { ToursComponent } from './tours/tours.component';
+import { SobrenosotrosComponent } from './sobrenosotros/sobrenosotros.component';
+
 
 
 export const routes: Routes = [
@@ -20,6 +22,8 @@ export const routes: Routes = [
     { path: 'explorar', component: ExplorarComponent },
     { path: 'contactanos', component: ContactanosComponent },
     { path: 'experiencias', component: ExperienciasComponent },
+    { path: 'sobrenosotros', component: SobrenosotrosComponent },// crea este componente si no lo tienes
+
     {
         path: 'reservas',
         component: ReservasComponent,

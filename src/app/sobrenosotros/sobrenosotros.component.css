@@ -1,0 +1,69 @@
+.contenedor-sobre-nosotros {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.seccion-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.seccion-intro h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.seccion-contenido {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tarjeta {
+  flex: 1 1 300px;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+}
+
+.tarjeta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.tarjeta p,
+.tarjeta ul {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+  text-align: left;
+}
+
+.tarjeta ul {
+  padding-left: 20px;
+}
+
+.tarjeta ul li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+}

@@ -1,30 +1,26 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private credenciales = { usuario: 'admin', clave: '1234' };
-  public usuarioLogeado: string | null = null;
+  private apiUrl = 'https://localhost:7288/api/Usuario'; 
+  private apiUrlPuntos = 'https://localhost:7288/api/PuntoTuristico';
 
-  login(usuario: string, clave: string): boolean {
-    if (usuario === this.credenciales.usuario && clave === this.credenciales.clave) {
-      this.usuarioLogeado = usuario;
-      return true;
-    }
-    return false;
+  constructor(private http: HttpClient) {}
+
+  login(usuario: string, clave: string): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/login`, {
+      usuario,
+      clave
+    });
   }
 
-  logout() {
-    this.usuarioLogeado = null;
-  }
-
-  estaAutenticado(): boolean {
-    return this.usuarioLogeado !== null;
-  }
-
-  getUsuario(): string | null {
-    return this.usuarioLogeado;
+  obtenerPuntos(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrlPuntos}/listar`);
   }
 }
+
 
